@@ -1,0 +1,1 @@
+{"sample":{"ts":1760000000,"pv_w":4200.4,"load_w":1500.0,"grid_w":-1800.0,"battery_w":900.0,"soc_pct":63.5},"car":null,"grid_pull":{"now_w":0,"peak_today_w":3200,"peak_today_at":1759990000,"warn_w":8000,"limit_w":10000,"volts":null}}
