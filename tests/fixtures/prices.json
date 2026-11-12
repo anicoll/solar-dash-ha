@@ -1,0 +1,1 @@
+{"spike_cents":100,"channels":{},"now":{"general":{"start":1760000000,"end":1760000300,"cents":28.43,"spot_cents":12.0,"kind":"current","fetched_at":1760000015,"descriptor":"neutral","renewables":55.0},"feed_in":{"start":1760000000,"end":1760000300,"cents":-8.26,"spot_cents":-8.0,"kind":"current","fetched_at":1760000015,"descriptor":null,"renewables":55.0}}}

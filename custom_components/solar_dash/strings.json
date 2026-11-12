@@ -1,0 +1,105 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to solar-dash",
+        "description": "Enter the address of your solar-dash server and an API token (set as `api_token` under `[server]` in solar-dash's config).",
+        "data": {
+          "url": "URL",
+          "api_token": "API token"
+        },
+        "data_description": {
+          "url": "For example http://192.168.1.20:8080",
+          "api_token": "The `api_token` from solar-dash's config. It is only used to read data."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-enter the API token",
+        "description": "solar-dash at {url} rejected the API token. Enter the current one.",
+        "data": {
+          "api_token": "API token"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to solar-dash.",
+      "invalid_auth": "solar-dash rejected the API token.",
+      "invalid_url": "Enter a valid http:// or https:// address."
+    },
+    "abort": {
+      "already_configured": "This solar-dash server is already configured.",
+      "reauth_successful": "The API token was updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "solar-dash options",
+        "data": {
+          "scan_interval": "Live update interval (seconds)"
+        },
+        "data_description": {
+          "scan_interval": "How often the live power readings are fetched. Today's totals and prices update every 60 seconds."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "solar_power": {
+        "name": "Solar power"
+      },
+      "home_load": {
+        "name": "Home load"
+      },
+      "grid_power": {
+        "name": "Grid power"
+      },
+      "battery_power": {
+        "name": "Battery power"
+      },
+      "battery_soc": {
+        "name": "Battery state of charge"
+      },
+      "grid_import": {
+        "name": "Grid import"
+      },
+      "grid_export": {
+        "name": "Grid export"
+      },
+      "today_grid_import": {
+        "name": "Grid import today"
+      },
+      "today_grid_export": {
+        "name": "Grid export today"
+      },
+      "today_solar": {
+        "name": "Solar today"
+      },
+      "today_battery_charge": {
+        "name": "Battery charge today"
+      },
+      "today_battery_discharge": {
+        "name": "Battery discharge today"
+      },
+      "today_home_use": {
+        "name": "Home use today"
+      },
+      "today_power_cost": {
+        "name": "Power cost today"
+      },
+      "today_net_cost": {
+        "name": "Net cost today"
+      },
+      "amber_general_price": {
+        "name": "Amber general price"
+      },
+      "amber_feed_in_price": {
+        "name": "Amber feed-in price"
+      },
+      "amber_descriptor": {
+        "name": "Amber price level"
+      }
+    }
+  }
+}
